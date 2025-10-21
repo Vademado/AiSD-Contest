@@ -36,7 +36,6 @@ class MyDeque:
         return self.deque_array[(self.start - 1) % self.capacity]
 
     def print(self):
-
         print(" ".join([self.deque_array[i % self.capacity] for i in range(self.start, self.start + self.size) if
                         self.deque_array[i % self.capacity] is not None]) if self.size > 0 else "empty")
 
